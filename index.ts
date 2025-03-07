@@ -1,9 +1,9 @@
 import { createFilter } from '@rollup/pluginutils';
 import path from 'path';
-import { compress } from './compress';
-import type { UserCompressionOptions, ViteCompressionPluginConfig } from './interface';
-import { len, replaceFileName, stringToBytes } from './shared';
-import { createConcurrentQueue } from './task';
+import { compress } from './src/compress';
+import type { UserCompressionOptions, ViteCompressionPluginConfig } from './src/interface';
+import { len, replaceFileName, stringToBytes } from './src/shared';
+import { createConcurrentQueue } from './src/task';
 import type { PluginContext } from 'rollup';  // ⬅️ Import PluginContext from Rollup
 
 const MAX_CONCURRENT = Math.max(1, (require('os').cpus() || { length: 1 }).length - 1);
