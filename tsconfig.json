@@ -1,0 +1,17 @@
+{
+  "compilerOptions": {
+    "allowJs": true,
+    "baseUrl": ".",
+    "noImplicitThis": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "target": "ES2019",
+    "lib": ["esnext", "dom"],
+    "module": "ESNext",
+    "moduleResolution": "node",
+    "outDir": "dist",
+    "declaration": true,         // ✅ Generate .d.ts files
+    "declarationMap": true,      // (Optional) Generates maps for debugging
+    "emitDeclarationOnly": false // Ensure it compiles both .js and .d.ts
+  }
+}

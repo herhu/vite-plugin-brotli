@@ -1,0 +1,48 @@
+{
+  "name": "vite-plugin-brotli",
+  "version": "1.0.0",
+  "packageManager": "pnpm@9.4.0",
+  "description": "A fast Vite compression plugin using Brotli only",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "module": "dist/index.mjs",
+  "scripts": {
+    "build": "tsc"
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yourusername/vite-plugin-brotli.git"
+  },
+  "keywords": [
+    "vite",
+    "vite-plugin",
+    "brotli",
+    "compression"
+  ],
+  "author": "Kanno",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/yourusername/vite-plugin-brotli/issues"
+  },
+  "homepage": "https://github.com/yourusername/vite-plugin-brotli#readme",
+  "exports": "./src/index.ts",
+  "devDependencies": {
+    "@types/node": "^20.14.9",
+    "@types/rollup": "^0.54.0",
+    "rollup": "^4.34.9",
+    "typescript": "^5.3.3",
+    "vite": "^6.0.0",
+    "vitest": "^2.1.2"
+  },
+  "dependencies": {
+    "@rollup/pluginutils": "^5.1.4"
+  },
+  "peerDependencies": {
+    "vite": "^2.0.0 || ^3.0.0 || ^4.0.0 || ^5.0.0 || ^6.0.0"
+  }
+}
